@@ -4,7 +4,7 @@ async function config() {
   return {
     title: 'imgx.cc',
     description: 'Just playing around.',
-    base: '/vitepress-blog/',
+    base: '/',
     themeConfig: {
       posts: await getPosts(),
       pageSize: 5, //几个为一页
