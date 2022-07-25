@@ -20,7 +20,6 @@ const isHome = computed(() => {
   return useData().page.value.relativePath.indexOf('index.md') > -1
 })
 const isDetail = computed(() => {
-  console.log(useData().page.value.relativePath)
   return useData().page.value.relativePath.indexOf('posts') > -1
 })
 </script>

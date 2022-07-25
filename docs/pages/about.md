@@ -7,6 +7,4 @@ sidebar: false
 aside: false
 ---
 
-## about me
-
-coming soon...
+imgx

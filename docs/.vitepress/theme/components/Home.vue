@@ -5,7 +5,7 @@
         <div class="item-title">
           <a :href="withBase(item.regularPath)" v-text="item.frontMatter.title"></a>
         </div>
-        <div class="item-date" v-text="transDate(item.frontMatter.date)"></div>
+        <div class="item-date" v-text="item.frontMatter.date"></div>
       </div>
       <div class="item-desc" v-text="item.frontMatter.description"></div>
     </div>
@@ -130,7 +130,7 @@ const transDate = (date: string) => {
 .item-container {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px dashed skyblue;
+  border-bottom: 1px dashed #42b883;
   padding: 1rem 0 0 0;
 }
 .pagination {
@@ -151,7 +151,7 @@ const transDate = (date: string) => {
   border-radius: 2px;
 }
 .activeLink {
-  border: 1px solid skyblue;
+  border: 1px solid #42b883;
 }
 .list-header {
   display: flex;

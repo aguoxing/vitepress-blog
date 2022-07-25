@@ -1,4 +1,24 @@
 /* .vitepress/theme/custom.css */
+:root {
+  --c-divider-light: #e2e8f0;
+  --c-divider-dark: rgba(84, 84, 88, 0.48);
+
+  --c-brand: #333; /*  don't forget change the --tag-bg for tags */
+  --c-brand-light: #333;
+
+  --font-family-base: 'PingFang SC', 'Microsoft Yahei', sans-serif;
+  --font-family-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  --header-height: 3.6rem;
+  --code-bg-color: #52525b;
+
+  /* pure theme color */
+  --li-dot-color: #737373;
+  --title-color: #334155;
+  --date-color: #64748b;
+  --date-font-family: Georgia, sans-serif;
+  --tag-bg: #eff6ff;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -16,9 +36,29 @@
   //border-radius: 5px;
 }
 
-.main-container {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  flex: 1 0 auto;
+.article {
+  padding: 4px 0 4px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-o {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--li-dot-color);
+}
+.title {
+  /* color: var(--title-color); */
+  font-size: 0.9375rem;
+}
+.title:hover {
+  /* color: var(--c-brand); */
+}
+.date {
+  /* color: var(--date-color); */
+  /* font-family: var(--date-font-family); */
 }
