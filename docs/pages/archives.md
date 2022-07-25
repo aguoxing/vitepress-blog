@@ -1,7 +1,7 @@
 ---
 layout: doc
 page: true
-title: Archive
+title: Archives
 description: Archive
 sidebar: false
 ---

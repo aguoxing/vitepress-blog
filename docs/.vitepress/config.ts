@@ -3,21 +3,28 @@ import { getPosts, getPostLength } from './utils/page'
 async function config() {
   return {
     title: 'imgx.cc',
-    description: 'Just playing around.',
+    description: 'imgx.cc',
     base: '/',
+    head: [
+      // ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+      // 禁止页面缩放
+      ['meta',{name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'}],
+      ['meta', {name: 'author', content: 'imgx.cc'}],
+      ['meta',{property: 'og:title',content: 'Home'}]
+    ],
     themeConfig: {
       posts: await getPosts(),
-      pageSize: 5, //几个为一页
-      postLength: await getPostLength(), //博客有几篇
-      // logo: '/logo.svg',
+      pageSize: 5,
+      postLength: await getPostLength(),
+      logo: '/logo.svg',
       siteTitle: 'imgx.cc',
       outlineTitle: '大纲',
       repo: '',
       nav: [
-        { text: '首页', link: '/' },
-        { text: '归档', link: '/pages/archives' },
-        { text: '标签', link: '/pages/tags' },
-        { text: '关于', link: '/pages/about' }
+        { text: 'Home', link: '/' },
+        { text: 'Archives', link: '/pages/archives' },
+        { text: 'Tags', link: '/pages/tags' },
+        { text: 'About', link: '/pages/about' }
       ],
       lastUpdated: true,
       lastUpdatedText: 'Updated Date',
