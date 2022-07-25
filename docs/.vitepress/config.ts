@@ -42,7 +42,7 @@ async function config() {
       },
       footer: {
         message: 'Released under the MIT License.',
-        copyright: 'Copyright © 2022-present gx'
+        copyright: 'Copyright © 2022-present imgx.cc'
       }
     },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
