@@ -9,7 +9,7 @@ async function config() {
       posts: await getPosts(),
       pageSize: 5, //几个为一页
       postLength: await getPostLength(), //博客有几篇
-      logo: './public/logo.svg',
+      // logo: '/logo.svg',
       siteTitle: 'imgx.cc',
       outlineTitle: '大纲',
       repo: '',
