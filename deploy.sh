@@ -11,7 +11,7 @@ git push origin
 cd docs/.vitepress/dist
 
 # 如果是发布到自定义域名
-echo 'www.cloudos.top' > CNAME
+echo 'www.imgx.cc' > CNAME
 
 git init
 git add -A
