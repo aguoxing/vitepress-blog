@@ -1,10 +1,10 @@
 ---
 layout: page
 page: true
-title: Tags
-description: Tags
+title: Category
+description: Category
 sidebar: false
 aside: false
 ---
 
-<Tags/>
+<Category/>

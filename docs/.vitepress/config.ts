@@ -6,11 +6,19 @@ async function config() {
     description: 'imgx.cc',
     base: '/',
     head: [
+      ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
       // ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
       // 禁止页面缩放
-      ['meta',{name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'}],
-      ['meta', {name: 'author', content: 'imgx.cc'}],
-      ['meta',{property: 'og:title',content: 'Home'}]
+      [
+        'meta',
+        {
+          name: 'viewport',
+          content:
+              'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'
+        }
+      ],
+      ['meta', { name: 'author', content: 'imgx.cc' }],
+      ['meta', { property: 'og:title', content: 'Home' }]
     ],
     themeConfig: {
       posts: await getPosts(),
@@ -22,8 +30,9 @@ async function config() {
       repo: '',
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Archives', link: '/pages/archives' },
+        { text: 'Category', link: '/pages/category' },
         { text: 'Tags', link: '/pages/tags' },
+        { text: 'Archive', link: '/pages/archives' },
         { text: 'About', link: '/pages/about' }
       ],
       lastUpdated: true,

@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top: 10px">
+  <div class="main-container" style="padding-top: 10px">
     <div v-for="(yearList, index) in data" :key="index">
       <div class="year">
         {{ yearList[0].frontMatter.date.split('-')[0] }}

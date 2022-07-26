@@ -11,11 +11,11 @@
     </div>
     <div class="pagination">
       <div
-        class="link"
-        :class="{ activeLink: pageCurrent === i }"
         v-for="(i, index) in pagesNum"
         :key="index"
         v-text="i"
+        class="link"
+        :class="{ activeLink: pageCurrent === i }"
         @click="go(i)"
       ></div>
     </div>
@@ -130,7 +130,7 @@ const transDate = (date: string) => {
 .item-container {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px dashed #42b883;
+  border-bottom: 1px dashed var(--vp-c-brand);
   padding: 1rem 0 0 0;
 }
 .pagination {
@@ -151,7 +151,7 @@ const transDate = (date: string) => {
   border-radius: 2px;
 }
 .activeLink {
-  border: 1px solid #42b883;
+  border: 1px solid var(--vp-c-brand);
 }
 .list-header {
   display: flex;
