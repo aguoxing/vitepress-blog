@@ -67,3 +67,5 @@ New Repository Secret
 - https://github.com/clark-cui/vitepress-blog-zaun
 - https://github.com/airene/vitepress-blog-pure
 - https://zhuanlan.zhihu.com/p/363948019
+- https://blog.saky.site/post/github-action-128/
+- https://github.com/peaceiris/actions-gh-pages
