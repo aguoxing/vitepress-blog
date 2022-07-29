@@ -59,6 +59,8 @@ yarn add --dev vitepress vue
 ## 部署
 
 deploy
+https://github.com/xxx/vitepress-blog/settings/secrets/actions
+New Repository Secret 
 
 ## 参考
 
