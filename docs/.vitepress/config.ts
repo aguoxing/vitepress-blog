@@ -20,6 +20,7 @@ async function config() {
       ['meta', { name: 'author', content: 'imgx.cc' }],
       ['meta', { property: 'og:title', content: 'Home' }]
     ],
+    lastUpdated: true,
     themeConfig: {
       posts: await getPosts(),
       pageSize: 5,
@@ -35,7 +36,6 @@ async function config() {
         { text: 'Archive', link: '/pages/archives' },
         { text: 'About', link: '/pages/about' }
       ],
-      lastUpdated: true,
       lastUpdatedText: 'Updated Date',
       /*socialLinks: [
           { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
