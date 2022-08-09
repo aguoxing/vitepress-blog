@@ -31,7 +31,7 @@ simsun.ttc 宋体常规
 simhei.ttf 黑体常规
 ```
 
-```dockerfile
+```
 #依赖镜像名称和ID
 FROM centos:7
 #指定镜像创建者信息
