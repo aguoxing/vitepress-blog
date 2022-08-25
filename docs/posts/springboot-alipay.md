@@ -1,4 +1,3 @@
-```
 ---
 title: SpringBoot整合Alipay
 description: SpringBoot整合Alipay
@@ -8,7 +7,6 @@ tags:
 - alipay
 - 支付
 ---
-```
 
 # SpringBoot整合Alipay
 

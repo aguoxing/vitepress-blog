@@ -1,13 +1,17 @@
 <template>
   <div class="main-container">
     <div class="item-container" v-for="(item, index) in posts" :key="index">
-      <div class="list-header">
-        <div class="item-title">
-          <a :href="withBase(item.regularPath)" v-text="item.frontMatter.title"></a>
-        </div>
-        <div class="item-date" v-text="item.frontMatter.date"></div>
+
+      <div class="item-title">
+        <a :href="withBase(item.regularPath)" v-text="item.frontMatter.title"></a>
       </div>
       <div class="item-desc" v-text="item.frontMatter.description"></div>
+
+      <div class="item-bottom">
+        <div v-text="item.frontMatter.category"></div>
+        <div class="item-date" v-text="item.frontMatter.date"></div>
+      </div>
+
     </div>
     <div class="pagination">
       <div
@@ -133,6 +137,10 @@ const transDate = (date: string) => {
   border-bottom: 1px dashed var(--vp-c-brand);
   padding: 1rem 0 0 0;
 }
+.item-bottom {
+  display: flex;
+  justify-content: space-between;
+}
 .pagination {
   display: flex;
   flex-direction: row;
@@ -145,13 +153,15 @@ const transDate = (date: string) => {
   height: 2rem;
   line-height: 2rem;
   text-align: center;
-  border: 1px solid #282936;
+  /*border: 1px solid #282936;*/
   cursor: pointer;
   transition: 0.2s;
   border-radius: 2px;
 }
 .activeLink {
-  border: 1px solid var(--vp-c-brand);
+  /*border: 1px solid var(--vp-c-brand);*/
+  color: var(--vp-c-brand);
+  background-color: var(--vp-pagination-bgc);
 }
 .list-header {
   display: flex;

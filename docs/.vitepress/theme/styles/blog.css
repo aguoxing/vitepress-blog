@@ -26,17 +26,23 @@
   --vp-c-scrollbar-thumb-dark: #686868;
   --vp-c-scrollbar-track-dark: #424242;
 
+  /* pagination bgc */
+  --vp-pagination-bgc-light: #f4f4f5;
+  --vp-pagination-bgc-dark: #3a3a3a;
+
 }
 
 /* Colors Theme */
 :root {
   --vp-c-scrollbar-thumb: var(--vp-c-scrollbar-thumb-light);
   --vp-c-scrollbar-track: var(--vp-c-scrollbar-track-light);
+  --vp-pagination-bgc: var(--vp-pagination-bgc-light);
 }
 /* Dark Mode Theme */
 .dark {
   --vp-c-scrollbar-thumb: var(--vp-c-scrollbar-thumb-dark);
   --vp-c-scrollbar-track: var(--vp-c-scrollbar-track-dark);
+  --vp-pagination-bgc: var(--vp-pagination-bgc-dark);
 }
 
 ::-webkit-scrollbar {
@@ -60,6 +66,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .title-o {
   display: inline-block;

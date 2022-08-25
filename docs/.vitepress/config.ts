@@ -23,7 +23,7 @@ async function config() {
     lastUpdated: true,
     themeConfig: {
       posts: await getPosts(),
-      pageSize: 5,
+      pageSize: 10,
       postLength: await getPostLength(),
       logo: '/logo.svg',
       siteTitle: 'imgx.cc',
