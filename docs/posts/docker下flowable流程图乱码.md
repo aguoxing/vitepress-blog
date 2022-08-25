@@ -12,6 +12,10 @@ tags:
 
 ### docker部署的flowable流程图乱码
 
+原因：构建镜像使用的jdk没有需要的字体
+
+将需要的字体提取，重新构建jdk镜像即可
+
 docker 查看容器的长id
 
 ```sh
