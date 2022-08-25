@@ -14,17 +14,9 @@ web 沙箱应用： 自定义密钥->公钥查看->加签变更->粘贴
 
 
 
-
-
-
-
-参考：https://blog.csdn.net/ybsgsg/article/details/124348842
-
-
-
 springboot需要用到的配置
 
-```yml
+```yaml
 # 应用ID,您的APPID web沙箱应用中获取
 appId:2021000119675024
 # 商户私钥，您的PKCS8格式RSA2私钥，通过开发助手生成的应用私钥
@@ -43,3 +35,6 @@ charset: utf-8
 gatewayUrl: https://openapi.alipaydev.com/gateway.do
 ```
 
+
+
+参考：https://blog.csdn.net/ybsgsg/article/details/124348842
