@@ -1,8 +1,19 @@
-### Vagrant
+---
+title: Vagrant与VirtualBox搭建虚拟机
+description: vagrant、virtual box
+date: 2022-08-22
+category: 虚拟机
+tags:
+- vagrant
+- virtual box
+---
+
+# Vagrant与VirtualBox搭建虚拟机
+## Vagrant
 
 下载地址：https://www.vagrantup.com/downloads
 
-### VirtualBox
+## VirtualBox
 
 下载地址：https://www.virtualbox.org/wiki/Downloads
 
@@ -10,7 +21,7 @@
 
 打开全局设置，配置虚拟机安装地址
 
-### Vagrant Box
+## Vagrant Box
 
 Vagrant Box下载地址：https://app.vagrantup.com/boxes/search
 
@@ -24,7 +35,7 @@ vagrant box add centos7 e:\xx\xx.box
 vagrant box list
 ```
 
-### 创建虚拟机
+## 创建虚拟机
 
 创建一个文件夹统一管理vagrantfile，如：`e:/vm/vagrantfile/centos7`
 
@@ -44,7 +55,7 @@ vagrant up
 vagrant halt
 ```
 
-### 远程控制
+## 远程控制
 
 ```shell
 # 虚拟机启动后先使用默认账号登录
@@ -76,7 +87,7 @@ vagrant reload
 
 使用ssh连接
 
-### 安装开发环境
+## 安装开发环境
 
 先安装基本工具
 

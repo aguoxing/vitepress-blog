@@ -1,3 +1,17 @@
+```
+---
+title: SpringBoot整合Alipay
+description: SpringBoot整合Alipay
+date: 2022-05-22
+category: SpringBoot
+tags:
+- alipay
+- 支付
+---
+```
+
+# SpringBoot整合Alipay
+
 支付宝开放平台
 
 https://open.alipay.com/platform/home.htm?from=wwwalipay
