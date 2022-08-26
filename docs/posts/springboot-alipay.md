@@ -49,4 +49,6 @@ gatewayUrl: https://openapi.alipaydev.com/gateway.do
 
 
 
-参考：https://blog.csdn.net/ybsgsg/article/details/124348842
+### 参考
+
+[springboot实现支付宝支付功能](https://blog.csdn.net/ybsgsg/article/details/124348842)

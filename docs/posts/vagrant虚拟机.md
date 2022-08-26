@@ -161,9 +161,7 @@ chmod 755 /etc/rc.local
 
 
 
+## 参考
 
-
-参考：
-
-1. https://blog.csdn.net/qq_44713454/article/details/119943743
-2. https://blog.csdn.net/cbcxvbfxgb/article/details/106868092
+- [Vagrant 与 VirtualBox 的保姆级安装教程](https://blog.csdn.net/qq_44713454/article/details/119943743)
+- [vagrant root账号登录](https://blog.csdn.net/cbcxvbfxgb/article/details/106868092)
