@@ -8,9 +8,9 @@ tags:
   - maven
 ---
 
+# 最新ssm整合（idea+maven）
 
-
-最新ssm整合（idea+maven），做个记录，顺便复习下
+> 最新ssm整合（idea+maven），做个记录，顺便复习下
 
 ## 创建项目
 
@@ -19,8 +19,6 @@ tags:
    ![1](http://cdn.cloudos.top/ssm-1.png)
 
 2. 创建webapp文件夹
-
-   <img src="http://cdn.cloudos.top/ssm-2.png" style="zoom:50%;" />
 
    ![2](http://cdn.cloudos.top/ssm-2.png)
 
@@ -57,11 +55,11 @@ tags:
 
 
 
+## 参考
 
-参考
+[SSM 框架整合完整流程讲解（IDEA + Maven）](https://cloud.tencent.com/developer/article/1610326)
 
-- https://cloud.tencent.com/developer/article/1610326
-- https://cloud.tencent.com/developer/article/2020828
+[SSM框架整合—详细整合教程](https://cloud.tencent.com/developer/article/2020828)
 
 
 
