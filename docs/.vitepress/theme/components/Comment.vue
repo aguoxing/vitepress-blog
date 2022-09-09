@@ -2,7 +2,8 @@
   <div id="gitalk-container"></div>
 </template>
 <script lang="ts" setup>
-import 'gitalk/dist/gitalk.css'
+// import 'gitalk/dist/gitalk.css'
+import '../styles/gitalk.css'
 import Gitalk from 'gitalk'
 import md5 from 'blueimp-md5'
 import { onMounted } from 'vue'
