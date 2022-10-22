@@ -17,6 +17,8 @@ async function config() {
               'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'
         }
       ],
+      // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+      // ['meta', { property: 'Content-Security-Policy', content: 'upgrade-insecure-requests' }],
       ['meta', { name: 'author', content: 'imgx.cc' }],
       ['meta', { property: 'og:title', content: 'Home' }]
     ],
@@ -53,8 +55,8 @@ async function config() {
           text: 'Edit this page on GitHub'
       },*/
       docFooter: {
-        prev: 'Pagina prior',
-        next: 'Proxima pagina'
+        prev: '上一篇',
+        next: '下一篇'
       },
       footer: {
         message: 'Released under the MIT License.',
