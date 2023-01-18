@@ -23,7 +23,7 @@
     "globby": "^11.1.0",
     "gray-matter": "^4.0.3",
     "typescript": "^4.8.3",
-    "vitepress": "^1.0.0-alpha.35",
+    "vitepress": "^1.0.0-alpha.38",
     "vue": "^3.2.39"
   },
   "dependencies": {

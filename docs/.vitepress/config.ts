@@ -63,6 +63,12 @@ async function config() {
         copyright: 'Copyright © 2022-present imgx.cc'
       }
     },
+    locales: {
+      root: { label: 'English' },
+      zh: { label: '简体中文', link: 'https://cn.vitejs.dev' },
+      ja: { label: '日本語', link: 'https://ja.vitejs.dev' },
+      es: { label: 'Español', link: 'https://es.vitejs.dev' }
+    },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
     markdown: {
       theme: 'material-palenight',
