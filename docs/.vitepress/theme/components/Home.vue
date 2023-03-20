@@ -13,15 +13,17 @@
       </div>
 
     </div>
-    <div class="pagination">
-      <div
-        v-for="(i, index) in pagesNum"
-        :key="index"
-        v-text="i"
-        class="link"
-        :class="{ activeLink: pageCurrent === i }"
-        @click="go(i)"
-      ></div>
+    <div v-if="pagesNum > 1">
+      <div class="pagination">
+        <div
+            v-for="(i, index) in pagesNum"
+            :key="index"
+            v-text="i"
+            class="link"
+            :class="{ activeLink: pageCurrent === i }"
+            @click="go(i)"
+        ></div>
+      </div>
     </div>
   </div>
 </template>
