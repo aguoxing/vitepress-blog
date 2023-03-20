@@ -2,8 +2,8 @@ import { getPosts, getPostLength } from './utils/page'
 
 async function config() {
   return {
-    title: 'imgx.cc',
-    description: 'imgx.cc',
+    title: 'imgx.cc个人博客',
+    description: '由Vitepress+GitHub Pages构建，imgx.cc个人博客，记录和分享个人碎片化、结构化、体系化的知识内容',
     base: '/',
     head: [
       ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
@@ -19,7 +19,7 @@ async function config() {
       ],
       // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       // ['meta', { property: 'Content-Security-Policy', content: 'upgrade-insecure-requests' }],
-      ['meta', { name: 'description', content: '由Vitepress+GitHub Pages构建，imgx.cc个人博客，记录和分享个人碎片化、结构化、体系化的知识内容' }],
+      //['meta', { name: 'description', content: '由Vitepress+GitHub Pages构建，imgx.cc个人博客，记录和分享个人碎片化、结构化、体系化的知识内容' }],
       ['meta', { name: 'author', content: 'imgx.cc' }],
       ['meta', { property: 'og:title', content: 'imgx.cc个人博客' }]
     ],
@@ -35,7 +35,7 @@ async function config() {
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Category', link: '/pages/category' },
-        { text: 'Tags', link: '/pages/tags' },
+        // { text: 'Tags', link: '/pages/tags' },
         { text: 'Archive', link: '/pages/archives' },
         { text: 'About', link: '/pages/about' }
       ],
