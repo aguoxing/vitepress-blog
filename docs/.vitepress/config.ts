@@ -19,8 +19,9 @@ async function config() {
       ],
       // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       // ['meta', { property: 'Content-Security-Policy', content: 'upgrade-insecure-requests' }],
+      ['meta', { name: 'description', content: '由Vitepress+GitHub Pages构建，imgx.cc个人博客，记录和分享个人碎片化、结构化、体系化的知识内容' }],
       ['meta', { name: 'author', content: 'imgx.cc' }],
-      ['meta', { property: 'og:title', content: 'Home' }]
+      ['meta', { property: 'og:title', content: 'imgx.cc个人博客' }]
     ],
     lastUpdated: true,
     themeConfig: {
@@ -64,10 +65,8 @@ async function config() {
       }
     },
     locales: {
-      root: { label: 'English' },
-      zh: { label: '简体中文', link: 'https://cn.vitejs.dev' },
-      ja: { label: '日本語', link: 'https://ja.vitejs.dev' },
-      es: { label: 'Español', link: 'https://es.vitejs.dev' }
+      root: { label: '简体中文' },
+      zh: { label: 'English', link: 'https://cn.vitejs.dev' },
     },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
     markdown: {
