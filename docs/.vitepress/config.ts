@@ -71,7 +71,6 @@ async function config() {
     },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
     markdown: {
-      theme: 'material-palenight',
       lineNumbers: true
     }
   }
