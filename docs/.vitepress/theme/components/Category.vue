@@ -12,11 +12,13 @@
         :key="index"
         class="article"
     >
-      <div class="title">
+      <div class="date">
         <div class="title-o"></div>
+        {{ article.frontMatter.date }}
+      </div>
+      <div class="title">
         {{ article.frontMatter.title }}
       </div>
-      <div class="date">{{ article.frontMatter.date }}</div>
     </a>
   </div>
 </template>

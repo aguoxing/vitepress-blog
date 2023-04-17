@@ -8,12 +8,6 @@ tags:
   - blog
 ---
 
-
-
-
-
-
-
 # 最新vitepress搭建博客
 
 [源码](https://github.com/aguoxing/vitepress-blog)
@@ -21,9 +15,7 @@ tags:
 ## 开始
 参考官方文档：https://vitepress.vuejs.org/
 
-最后的项目结构：
 
-![image-20220809214217505](http://cdn.cloudos.top/image-20220809214217505.png)
 
 ## 配置
 

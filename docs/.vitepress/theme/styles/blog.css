@@ -62,7 +62,7 @@
 }
 
 .article {
-  padding: 4px 0 4px 25px;
+  padding: 4px 0 4px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
