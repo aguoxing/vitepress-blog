@@ -5,12 +5,18 @@
     width: 95%;
     margin: 0 auto;
   }
+  .archive-article-info-title-width {
+    width: 65%;
+  }
 }
 /*xs->手机*/
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .main-container {
     width: 95%;
     margin: 0 auto;
+  }
+  .archive-article-info-title-width {
+    width: 70%;
   }
 }
 /*sm->平板*/
@@ -19,12 +25,18 @@
     width: 90%;
     margin: 0 auto;
   }
+  .archive-article-info-title-width {
+    width: 70%;
+  }
 }
 /*md->桌面显示器*/
 @media screen and (min-width: 960px) and (max-width: 1199px) {
   .main-container {
     width: 60%;
     margin: 0 auto;
+  }
+  .archive-article-info-title-width {
+    width: 75%;
   }
 }
 /*lg->大屏*/
@@ -33,11 +45,17 @@
     width: 50%;
     margin: 0 auto;
   }
+  .archive-article-info-title-width {
+    width: 80%;
+  }
 }
 /*xl->大屏*/
 @media screen and (min-width: 1920px) {
   .main-container {
     width: 50%;
     margin: 0 auto;
+  }
+  .archive-article-info-title-width {
+    width: 85%;
   }
 }

@@ -1,74 +1,102 @@
 <template>
   <div class="main-container">
-    <div class="tags">
-    <span @click="toggleCategory(key)" v-for="(item, key) in data" class="tag">
-      {{ key }} <strong>{{ data[key].length }}</strong>
-    </span>
+    <div class="category-list-wrapper">
+      <span @click="toggleCategory(categoryName, 'currentPage')" v-for="(item, categoryName) in postsAll" class="category-item"
+        :class="{ 'category-item-checked': selectCategory === categoryName }">
+        {{ categoryName }} - {{ postsAll[categoryName].length }}
+      </span>
     </div>
-    <div class="header">{{ selectCategory }}</div>
-    <a
-        :href="withBase(article.regularPath)"
-        v-for="(article, index) in data[selectCategory]"
-        :key="index"
-        class="article"
-    >
-      <div class="date">
-        <div class="title-o"></div>
-        {{ article.frontMatter.date }}
+
+    <div class="article-list-wrapper" v-for="(item, index) in posts" :key="index">
+      <div class="article-info-title">
+        <a :href="withBase(item.regularPath)" v-text="item.frontMatter.title"></a>
       </div>
-      <div class="title">
-        {{ article.frontMatter.title }}
+      <div class="article-info-desc" v-text="item.frontMatter.description"></div>
+
+      <div class="article-info">
+        <div class="article-info-item">
+          <img src="/date.svg" />
+          <div class="article-info-date" v-text="item.frontMatter.date"></div>
+        </div>
       </div>
-    </a>
+      <div class="horizontal-divider"></div>
+    </div>
+
+    <div v-if="pagesNum > 1">
+      <div class="pagination">
+        <div v-for="(i, index) in pagesNum" :key="index" v-text="i" class="pagination-item"
+          :class="{ paginationItemChecked: pageCurrent === i }" @click="go(i)">
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
-import { initCategory } from '../../utils/blog'
+import { initCategory } from '../utils/blog'
+import { Post, PostMap } from '../types/blog'
 
 const { theme } = useData()
-const data = computed(() => initCategory(theme.value.posts))
-let selectCategory = ref('')
-const toggleCategory = (category: string) => {
+
+let currentUrl = location.href
+let url = currentUrl.split('?')[1]
+let params = new URLSearchParams(url)
+let selectCategory = ref(params.get('category') ? params.get('category') : '')
+
+// get posts
+let postsAll = ref<PostMap>(theme.value.posts || [])
+// filter index post
+postsAll = computed(() => initCategory(theme.value.posts))
+
+// pagination
+let allMap = {}
+// get postLength
+let postLength = 0
+// set posts
+let posts = ref<Post[]>([])
+//pageCurrent
+let pageCurrent = ref(1)
+let pagesNum = 0
+// get pageSize
+let pageSize = theme.value.pageSize
+
+const toggleCategory = (category: string, from: string) => {
+  if(from === 'currentPage') {
+    window.history.replaceState(null, '', currentUrl + '?category=' + category)
+  }
   selectCategory.value = category
+  if (category !== '') {
+    postLength = postsAll.value[category].length
+  }
+
+  //  pagesNum
+  pagesNum = postLength % pageSize === 0 ? postLength / pageSize : postLength / pageSize + 1
+  pagesNum = parseInt(pagesNum.toString())
+
+  pageCurrent.value = 1
+
+  for (let i = 0; i < pagesNum; i++) {
+    allMap[i] = []
+  }
+  let index = 0
+  for (let i = 0; i < postLength; i++) {
+    if (allMap[index].length > pageSize - 1) {
+      index += 1
+    }
+    allMap[index].push(postsAll.value[category][i])
+  }
+  posts.value = allMap[pageCurrent.value - 1]
+}
+
+if (selectCategory.value !== null && selectCategory.value !== '') {
+  currentUrl = location.href.split('?')[0]
+  toggleCategory(selectCategory.value, 'homePage')
+}
+
+const go = (i: number) => {
+  pageCurrent.value = i
+  posts.value = allMap[pageCurrent.value - 1]
 }
 </script>
-
-<style scoped>
-.tags {
-  margin-top: 14px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.tag {
-  display: inline-block;
-  padding: 4px 16px;
-  margin: 6px 8px;
-  font-size: 0.875rem;
-  line-height: 25px;
-  background-color: var(--tag-bg);
-  transition: 0.4s;
-  border-radius: 3px;
-  color: var(--c-brand);
-  cursor: pointer;
-}
-.tag strong {
-  color: #222;
-}
-.header {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-@media screen and (max-width: 700px) {
-  .header {
-    font-size: 1.5rem;
-  }
-  .date {
-    font-size: 0.75rem;
-  }
-}
-</style>

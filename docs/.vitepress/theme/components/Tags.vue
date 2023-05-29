@@ -23,7 +23,7 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
-import { initTags } from '../../utils/blog'
+import { initTags } from '../utils/blog'
 
 const { theme } = useData()
 const data = computed(() => initTags(theme.value.posts))

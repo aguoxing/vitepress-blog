@@ -7,8 +7,8 @@
   --c-brand: #333; /*  don't forget change the --tag-bg for tags */
   --c-brand-light: #333;
 
-  --font-family-base: 'PingFang SC', 'Microsoft Yahei', sans-serif;
-  --font-family-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  --font-family-base: "PingFang SC", "Microsoft Yahei", sans-serif;
+  --font-family-mono: source-code-pro, Menlo, Monaco, Consolas, "Courier New",monospace;
 
   --header-height: 3.6rem;
   --code-bg-color: #52525b;
@@ -29,7 +29,6 @@
   /* pagination bgc */
   --vp-pagination-bgc-light: #f4f4f5;
   --vp-pagination-bgc-dark: #3a3a3a;
-
 }
 
 /* Colors Theme */
@@ -61,39 +60,161 @@
   /*border-radius: 5px;*/
 }
 
-.article {
-  padding: 4px 0 4px 0;
+.horizontal-divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
+  /* border-bottom: 1px solid var(--blog-divider); */
+  border-bottom: 1px solid #e7e7ee;
+}
+
+/* ===========================home=========================== */
+.article-list-wrapper {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  font-size: 14px;
 }
-.article:hover {
-  color: var(--c-brand);
+
+.article-info-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0.1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.title-o {
-  /*display: inline-block;*/
-  /*margin-right: 10px;*/
-  /*margin-bottom: 3px;*/
-  margin: 0 5px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: var(--li-dot-color);
+
+.article-info-title:hover {
+  color: var(--vp-c-brand);
 }
-.title {
-  color: var(--title-color);
-  font-size: 0.9375rem;
+
+.article-info-desc {
+  color: #71717a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+  white-space: nowrap;
 }
-/*.title:hover {*/
-/*   color: var(--c-brand);*/
-/*}*/
-.date {
+
+.article-info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.article-info-date {
+  font-size: 14px;
+  color: #3c3c3c;
+  margin-left: 5px;
+}
+
+.article-info-category {
+  font-size: 14px;
+  color: #3c3c3c;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.article-info-category:hover {
+  color: var(--vp-c-brand);
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination-item {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: var(--date-color);
   align-items: center;
-  margin: 0 10px;
-  /* font-family: var(--date-font-family); */
+}
+
+.paginationItemChecked {
+  color: var(--vp-c-brand);
+  background-color: var(--vp-pagination-bgc);
+}
+
+/* ===========================category=========================== */
+.category-item {
+  background-color: #f4f4f5;
+  color: #909399;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 7px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.category-item:hover {
+  background-color: #dedfe0;
+}
+
+.category-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-item-checked {
+  color: var(--vp-c-brand);
+  background-color: #10b98140;
+}
+
+.category-item-checked:hover {
+  background-color: #10b98140;
+}
+
+/* ===========================archive=========================== */
+.archive-article-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  justify-content: space-between;
+}
+
+.archive-article-info-title {
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+  white-space: nowrap;
+}
+
+.archive-article-info-title:hover {
+  color: var(--vp-c-brand);
+}
+
+.year {
+  padding: 16px 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
 }

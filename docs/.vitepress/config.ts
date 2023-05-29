@@ -1,9 +1,9 @@
-import { getPosts, getPostLength } from './utils/page'
+import { getPosts, getPostLength } from './theme/utils/page'
 
 async function config() {
   return {
     title: 'imgx.cc个人博客',
-    description: '由Vitepress+GitHub Pages构建，imgx.cc个人博客，记录和分享个人碎片化、结构化、体系化的知识内容',
+    description: '由Vitepress+GitHub Pages构建 | imgx.cc个人博客 |记录和分享个人碎片化、结构化、体系化的知识内容',
     base: '/',
     head: [
       ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
