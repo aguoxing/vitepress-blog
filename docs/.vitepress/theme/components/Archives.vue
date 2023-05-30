@@ -26,6 +26,5 @@ import { Post, PostMap } from '../types/blog'
 
 const { theme } = useData()
 const archives = computed<PostMap>(() => useYearSort(theme.value.posts))
-console.log(archives.value);
 
 </script>

@@ -55,6 +55,9 @@ async function config() {
           pattern: 'https://github.com/aguoxing/vitepress-blog/edit/master/docs/:path',
           text: 'Edit this page on GitHub'
       },*/
+      search: {
+        provider: 'local',
+      },
       docFooter: {
         prev: '上一篇',
         next: '下一篇'
