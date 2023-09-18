@@ -314,10 +314,10 @@
   resolved "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
-"@types/node@^20.6.0":
-  version "20.6.0"
-  resolved "https://registry.npmmirror.com/@types/node/-/node-20.6.0.tgz#9d7daa855d33d4efec8aea88cd66db1c2f0ebe16"
-  integrity sha512-najjVq5KN2vsH2U/xyh2opaSEz6cZMR2SetLIlxlj08nOcmPOemJmUK2o4kUzfLqfrWE0PIrNeE16XhYDd3nqg==
+"@types/node@^20.6.2":
+  version "20.6.2"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-20.6.2.tgz#a065925409f59657022e9063275cd0b9bd7e1b12"
+  integrity sha512-Y+/1vGBHV/cYk6OI1Na/LHzwnlNCAfU3ZNGrc1LdRe/LAIbdDPTTv/HU3M7yXN448aTVDq3eKRm2cg7iKLb8gw==
 
 "@types/semver@^7.5.0":
   version "7.5.0"
@@ -1564,10 +1564,10 @@ vite@^4.4.9:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitepress@^1.0.0-rc.13:
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.13.tgz#4073865d1ee319472f6d3e8e13d97b4714e0edd6"
-  integrity sha512-TnVydQOZE38rtXu9gHCb7EGdN03jTcmYkDdhCqox6+pfKYgiyfm1qk2Uy8BZatnM9wXpa64f+T5p30R8P/9Z+A==
+vitepress@^1.0.0-rc.14:
+  version "1.0.0-rc.14"
+  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.14.tgz#d014df7890ca26d3ef73a5c05b2a73cc659e961c"
+  integrity sha512-yChIeXOAcNvVnSVjhziH1vte0uhKb00PuZf7KdIMfx3ixTMAz73Nn+6gREvCv0SdH+anteGUKz5eljv0ygcgGQ==
   dependencies:
     "@docsearch/css" "^3.5.2"
     "@docsearch/js" "^3.5.2"
