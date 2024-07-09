@@ -31,16 +31,16 @@ async function config() {
       postLength: await getPostLength(),
       logo: "/logo.svg",
       siteTitle: "imgx.cc",
-      outlineTitle: "大纲",
+      outlineTitle: "目录",
       repo: "",
       nav: [
-        { text: "Home", link: "/" },
-        { text: "Category", link: "/pages/category" },
+        { text: "首页", link: "/" },
+        { text: "分类", link: "/pages/category" },
         // { text: 'Tags', link: '/pages/tags' },
-        { text: "Archive", link: "/pages/archives" },
-        { text: "About", link: "/pages/about" },
+        { text: "归档", link: "/pages/archives" },
+        { text: "关于", link: "/pages/about" },
       ],
-      lastUpdatedText: "Updated Date",
+      lastUpdatedText: "最后更新于",
       /*socialLinks: [
           { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
           { icon: 'twitter', link: '...' },
@@ -64,7 +64,7 @@ async function config() {
         next: "下一篇",
       },
       footer: {
-        message: "Released under the MIT License.",
+        // message: "Released under the MIT License.",
         copyright: "Copyright © 2022-present imgx.cc",
       },
     },
@@ -75,6 +75,14 @@ async function config() {
     srcExclude: ["README.md"], // exclude the README.md , needn't to compiler
     markdown: {
       lineNumbers: true,
+      // math: true,
+      container: {
+        tipLabel: "提示",
+        warningLabel: "警告",
+        dangerLabel: "危险",
+        infoLabel: "信息",
+        detailsLabel: "详细信息",
+      },
     },
   };
 }
