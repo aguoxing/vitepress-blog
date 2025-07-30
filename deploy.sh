@@ -5,7 +5,7 @@ yarn docs:build
 # 生成静态文件后先推到master分支
 git add -A
 git commit -m 'build doc'
-git push origin mainA
+git push origin main
 
 # 进入生成的文件夹
 cd docs/.vitepress/dist
