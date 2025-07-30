@@ -22,6 +22,6 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push <远程主机名> <本地分支名>:<远程分支名>
-git push -f git@github.com:aguoxing/vitepress-blog.git main:gh-pages
+git push -f git@github.com:aguoxing/vitepress-blog.git master:gh-pages
 
 cd -
