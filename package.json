@@ -14,18 +14,18 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.6.4",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@typescript-eslint/parser": "^6.7.2",
-    "@typescript-eslint/types": "^6.7.2",
-    "@vue/compiler-sfc": "^3.3.4",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "@typescript-eslint/types": "^8.38.0",
+    "@vue/compiler-sfc": "^3.5.18",
     "blueimp-md5": "^2.19.0",
-    "fs-extra": "^11.1.1",
-    "globby": "^13.2.2",
+    "fs-extra": "^11.3.0",
+    "globby": "^14.1.0",
     "gray-matter": "^4.0.3",
-    "typescript": "^5.2.2",
-    "vitepress": "^1.0.0-rc.20",
-    "vue": "^3.3.4"
+    "typescript": "^5.8.3",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.18"
   },
   "dependencies": {
     "gitalk": "^1.8.0"
