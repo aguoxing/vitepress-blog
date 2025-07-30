@@ -3,16 +3,27 @@ import {
   toArray,
   tryOnScopeDispose,
   unrefElement
+<<<<<<< HEAD
 } from "./chunk-P2XGSYO7.js";
+=======
+} from "./chunk-5SIPG2HA.js";
+>>>>>>> master
 import {
   computed,
   shallowRef,
   toValue,
   watch
+<<<<<<< HEAD
 } from "./chunk-HVR2FF6M.js";
 import "./chunk-BUSYA2B4.js";
 
 // node_modules/tabbable/dist/index.esm.js
+=======
+} from "./chunk-O3I43HSE.js";
+import "./chunk-BUSYA2B4.js";
+
+// node_modules/.pnpm/tabbable@6.2.0/node_modules/tabbable/dist/index.esm.js
+>>>>>>> master
 var candidateSelectors = ["input:not([inert])", "select:not([inert])", "textarea:not([inert])", "a[href]:not([inert])", "button:not([inert])", "[tabindex]:not(slot):not([inert])", "audio[controls]:not([inert])", "video[controls]:not([inert])", '[contenteditable]:not([contenteditable="false"]):not([inert])', "details>summary:first-of-type:not([inert])", "details:not([inert])"];
 var candidateSelector = candidateSelectors.join(",");
 var NoElement = typeof Element === "undefined";
@@ -343,7 +354,11 @@ var isFocusable = function isFocusable2(node, options) {
   return isNodeMatchingSelectorFocusable(options, node);
 };
 
+<<<<<<< HEAD
 // node_modules/focus-trap/dist/focus-trap.esm.js
+=======
+// node_modules/.pnpm/focus-trap@7.6.4/node_modules/focus-trap/dist/focus-trap.esm.js
+>>>>>>> master
 function _arrayLikeToArray(r, a) {
   (null == a || a > r.length) && (a = r.length);
   for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
@@ -394,7 +409,11 @@ function _toPrimitive(t, r) {
   if ("object" != typeof t || !t) return t;
   var e = t[Symbol.toPrimitive];
   if (void 0 !== e) {
+<<<<<<< HEAD
     var i = e.call(t, r);
+=======
+    var i = e.call(t, r || "default");
+>>>>>>> master
     if ("object" != typeof i) return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
@@ -948,7 +967,11 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
       }
       state.active = true;
       state.paused = false;
+<<<<<<< HEAD
       state.nodeFocusedBeforeActivation = _getActiveElement(doc);
+=======
+      state.nodeFocusedBeforeActivation = doc.activeElement;
+>>>>>>> master
       onActivate === null || onActivate === void 0 || onActivate();
       var finishActivation = function finishActivation2() {
         if (checkCanFocusTrap) {
@@ -1066,7 +1089,7 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
   return trap;
 };
 
-// node_modules/@vueuse/integrations/useFocusTrap.mjs
+// node_modules/.pnpm/@vueuse+integrations@12.8.2_a2f70abae9791ddd8bf172c2a40bed69/node_modules/@vueuse/integrations/useFocusTrap.mjs
 function useFocusTrap(target, options = {}) {
   let trap;
   const { immediate, ...focusTrapOptions } = options;
@@ -1139,7 +1162,11 @@ tabbable/dist/index.esm.js:
 
 focus-trap/dist/focus-trap.esm.js:
   (*!
+<<<<<<< HEAD
   * focus-trap 7.6.5
+=======
+  * focus-trap 7.6.4
+>>>>>>> master
   * @license MIT, https://github.com/focus-trap/focus-trap/blob/master/LICENSE
   *)
 */

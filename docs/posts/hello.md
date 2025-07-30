@@ -7,9 +7,33 @@ tags:
   - blog
 ---
 
-
-
 ## Hello World
+
+### Title <Badge type="info" text="default" />
+
+info
+
+### Title <Badge type="tip" text="^1.9.0" />
+
+tip
+
+### Title <Badge type="warning" text="beta" />
+
+warning
+
+### Title <Badge type="danger" text="caution" />
+
+danger
+
+:::info info
+blah blah
+:::
+
+:::danger Windows Threading
+blah blah
+:::
+
+::: code-group
 
 ```java
 public class HelloWorld {
@@ -26,6 +50,7 @@ func main() {
 ```
 
 ```js
-console.log("hello world")
+console.log("hello world");
 ```
 
+:::

@@ -1,8 +1,8 @@
 <template>
-  <div class="main-container">
+  <div class="main-container" style="padding-top: 10px">
     <div class="category-list-wrapper">
-      <span @click="toggleCategory(categoryName, 'currentPage')" v-for="(item, categoryName) in postsAll" class="category-item"
-        :class="{ 'category-item-checked': selectCategory === categoryName }">
+      <span @click="toggleCategory(categoryName, 'currentPage')" v-for="(item, categoryName) in postsAll"
+        class="category-item" :class="{ 'category-item-checked': selectCategory === categoryName }">
         {{ categoryName }} - {{ postsAll[categoryName].length }}
       </span>
     </div>
@@ -40,10 +40,15 @@ import { Post, PostMap } from '../types/blog'
 
 const { theme } = useData()
 
+let selectCategory = ref<string>('')
 let currentUrl = location.href
 let url = currentUrl.split('?')[1]
-let params = new URLSearchParams(url)
-let selectCategory = ref(params.get('category') ? params.get('category') : '')
+if (url !== undefined) {
+  let params = new URLSearchParams(url)
+  if (params.get('category') !== null) {
+    selectCategory.value = params.get('category') as string
+  }
+}
 
 // get posts
 let postsAll = ref<PostMap>(theme.value.posts || [])
@@ -63,7 +68,7 @@ let pagesNum = 0
 let pageSize = theme.value.pageSize
 
 const toggleCategory = (category: string, from: string) => {
-  if(from === 'currentPage') {
+  if (from === 'currentPage') {
     window.history.replaceState(null, '', currentUrl + '?category=' + category)
   }
   selectCategory.value = category

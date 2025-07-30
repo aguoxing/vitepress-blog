@@ -9,7 +9,7 @@ import './styles/blog.css'
 import './styles/layout.css'
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
   Layout: BlogLayout,
   enhanceApp({ app }) {
     // register global component

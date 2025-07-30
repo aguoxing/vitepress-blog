@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <!-- https://vitepress.dev/zh/guide/extending-default-theme#layout-slots -->
     <template #home-features-after>
       <Home v-if="isHome" />
     </template>

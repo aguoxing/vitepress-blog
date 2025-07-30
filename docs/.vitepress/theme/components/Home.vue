@@ -41,6 +41,11 @@ import { useData, withBase } from 'vitepress'
 import { Post } from '../types/blog'
 const { theme } = useData()
 
+// let currentUrl = location.href
+// let url = currentUrl.split('?')[1]
+// let params = new URLSearchParams(url)
+// let currentPageNum = ref(params.get('pageNum') ? params.get('pageNum') : 1)
+
 // get posts
 let postsAll = theme.value.posts || []
 // get postLength
@@ -74,8 +79,15 @@ posts.value = allMap[pageCurrent.value - 1]
 
 // click pagination
 const go = (i: number) => {
+  // window.history.replaceState(null, '', currentUrl + '?pageNum=' + i)
+
   pageCurrent.value = i
   posts.value = allMap[pageCurrent.value - 1]
 }
+
+// if (currentPageNum.value !== null && currentPageNum.value !== '') {
+  // currentUrl = location.href.split('?')[0]
+  // go(currentPageNum.value)
+// }
 
 </script>
