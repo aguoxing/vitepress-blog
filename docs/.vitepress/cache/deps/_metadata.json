@@ -1,0 +1,67 @@
+{
+  "hash": "4bff6466",
+  "configHash": "cd0d7a16",
+  "lockfileHash": "71f94884",
+  "browserHash": "57049ef3",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.5.14_typescript@5.8.3/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "e1bfdb86",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.7.6/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "462a13ca",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@12.8.2_typescript@5.8.3/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "fc6566aa",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+integrations@12.8.2_a2f70abae9791ddd8bf172c2a40bed69/node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "f49d1804",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "4fd92a0b",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/.pnpm/minisearch@7.1.2/node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "88dfd61c",
+      "needsInterop": false
+    },
+    "gitalk": {
+      "src": "../../../../node_modules/.pnpm/gitalk@1.8.0/node_modules/gitalk/dist/gitalk.js",
+      "file": "gitalk.js",
+      "fileHash": "8ba84551",
+      "needsInterop": true
+    },
+    "blueimp-md5": {
+      "src": "../../../../node_modules/.pnpm/blueimp-md5@2.19.0/node_modules/blueimp-md5/js/md5.js",
+      "file": "blueimp-md5.js",
+      "fileHash": "fdcd0582",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-5SIPG2HA": {
+      "file": "chunk-5SIPG2HA.js"
+    },
+    "chunk-O3I43HSE": {
+      "file": "chunk-O3I43HSE.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
+    }
+  }
+}
