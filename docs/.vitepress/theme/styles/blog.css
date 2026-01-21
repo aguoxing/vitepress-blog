@@ -8,7 +8,8 @@
   --c-brand-light: #333;
 
   --font-family-base: "PingFang SC", "Microsoft Yahei", sans-serif;
-  --font-family-mono: source-code-pro, Menlo, Monaco, Consolas, "Courier New",monospace;
+  --font-family-mono:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 
   --header-height: 3.6rem;
   --code-bg-color: #52525b;
@@ -29,6 +30,8 @@
   /* pagination bgc */
   --vp-pagination-bgc-light: #f4f4f5;
   --vp-pagination-bgc-dark: #3a3a3a;
+
+  --blog-divider: #e7e7ee;
 }
 
 /* Colors Theme */
@@ -42,6 +45,8 @@
   --vp-c-scrollbar-thumb: var(--vp-c-scrollbar-thumb-dark);
   --vp-c-scrollbar-track: var(--vp-c-scrollbar-track-dark);
   --vp-pagination-bgc: var(--vp-pagination-bgc-dark);
+
+  --blog-divider: #3a3a3a;
 }
 
 ::-webkit-scrollbar {
@@ -65,8 +70,7 @@
   height: 1px;
   width: 100%;
   margin: 5px 0;
-  /* border-bottom: 1px solid var(--blog-divider); */
-  border-bottom: 1px solid #e7e7ee;
+  border-bottom: 1px solid var(--blog-divider);
 }
 
 /* ===========================home=========================== */
